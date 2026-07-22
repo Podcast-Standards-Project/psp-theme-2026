@@ -1,0 +1,6 @@
+# potentially in the repo, but no reason to ship to the live site
+.git/
+.gitignore
+.deployignore
+.github/
+README.md
