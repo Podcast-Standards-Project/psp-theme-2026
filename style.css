@@ -100,8 +100,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 	body {
 		background-color: #EDEDED;
-		border-top: 10px solid #F05A28;
-		border-bottom: 10px solid #F05A28;
+		border-top: 10px solid var(--psp-orange);
+		border-bottom: 10px solid var(--psp-orange);
 		color: #1D1D1D;
 		font-family: 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
 		margin:  0 auto;
@@ -139,7 +139,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	header nav ul li.active a { 
-		color: #F05A28;
+		color: var(--psp-orange);
 	}
 
 	header nav ul li {
@@ -161,7 +161,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	header div section h1 {
-		color: #F05A28;
+		color: var(--psp-orange);
 		font: 800 8rem/6rem 'Bebas Neue', sans-serif;
 		text-transform: uppercase;
 	}
@@ -233,7 +233,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	footer ul li a:hover { 
-		color: #F05A28;
+		color: var(--psp-orange);
 	}
 
 	footer#footer,
@@ -249,7 +249,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	blockquote {
-		border-left: 4px solid #F05A28;
+		border-left: 4px solid var(--psp-orange);
 		padding-left: 2rem;
 	}
 
@@ -264,7 +264,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
  	}
 
 	p a {
-		color: #F05A28;
+		color: var(--psp-orange);
 	}
 
 	pre {
@@ -293,7 +293,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	code a {
-		color: #F05A28!important;
+		color: var(--psp-orange)!important;
 	}
 
 	main article h2 {
@@ -307,7 +307,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	main article h4 {
-	 	color: #F05A28;
+	 	color: var(--psp-orange);
 		font: 700 1.5rem/1.5rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
  		letter-spacing: -.075rem;
  		margin-bottom: 1.5rem;
@@ -338,7 +338,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 	main article nav a,
 	main article ul li a {
-		color: #F05A28;
+		color: var(--psp-orange);
 	}
 
 	main article p {
@@ -368,7 +368,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
  	main article p a {
- 		color: #F05A28;
+ 		color: var(--psp-orange);
  	}
 
  	main article hr { 
@@ -378,7 +378,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
  	main article header h1 a,
  	main article header h2 a {
- 	 		color: #F05A28;
+ 	 		color: var(--psp-orange);
 			text-decoration: none;
  	}
 
