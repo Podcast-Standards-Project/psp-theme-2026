@@ -99,15 +99,15 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	body {
-		background-color: #EDEDED;
+		background-color: var(--gray-100);
 		border-top: 10px solid var(--psp-orange);
 		border-bottom: 10px solid var(--psp-orange);
-		color: #1D1D1D;
+		color: var(--gray-900);
 		font-family: 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
 		margin:  0 auto;
 		padding: 0;
 		min-height: 100vh;
-		background: linear-gradient(90deg, #EDEDED 24px, transparent 1%) center, linear-gradient(#EDEDED 24px, transparent 1%) center, #9D9D9D;
+		background: linear-gradient(90deg, var(--gray-100) 24px, transparent 1%) center, linear-gradient(var(--gray-100) 24px, transparent 1%) center, var(--gray-500);
   		background-size: 25px 25px;
 	}
 
@@ -134,7 +134,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	header nav ul li a { 
-		color: #1D1D1D;
+		color: var(--gray-900);
 		text-decoration: none; 
 	}
 
@@ -168,7 +168,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 	header div section h2 {
 		align-self: end;
-		color: #EDEDED;
+		color: var(--gray-100);
 		font: 400 1.15rem/2rem 'Inter',-apple-system,BlinkMacSystemFont,Helvetica, sans-serif;
 	}
 
@@ -178,7 +178,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	main article {
-		background: #fff;
+		background: var(--gray-000);
 		box-shadow: 0 0.938em 2.188em rgba(50,50,50,.1), 0 0.313em 0.938em rgba(0,0,0,.07);	
 		max-width: 1200px;
 		margin: -2rem auto 4rem;	
@@ -188,12 +188,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /* 	SECTION -- COLORS */
 
 .light 	{ 
-	background-color: #FFF; 
+	background-color: var(--gray-000); 
 	box-shadow: 0 0.938em 2.188em rgba(50,50,50,.1), 0 0.313em 0.938em rgba(0,0,0,.07);	
 }
 
 .dark	{ 
-	background-color: #1D1D1D; 
+	background-color: var(--gray-900); 
 	box-shadow: 0 0.938em 2.188em rgba(50,50,50,.1), 0 0.313em 0.938em rgba(0,0,0,.07);	
 }
 
@@ -210,8 +210,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /* 	SECTION -- FOOTER */
 
 	footer {
-		background-color: #1D1D1D;
-		color: #EDEDED;
+		background-color: var(--gray-900);
+		color: var(--gray-100);
 	}
 
 	footer section {
@@ -229,7 +229,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	footer ul li a { 
-		color: #EDEDED;
+		color: var(--gray-100);
 	}
 
 	footer ul li a:hover { 
@@ -272,9 +272,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	pre code { 
-		background: #2d2d2d;
+		background: var(--gray-800);
 		border-radius: 5px;
-		color: #ddd;
+		color: var(--gray-200);
 		display: block;
  		font: 400 1rem/1.5rem 'IBM Plex Mono',SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
 		font-size: 90%;
@@ -284,7 +284,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 	p code {
 		background: inherit;
-		color: #5D5D5D;
+		color: var(--gray-600);
 		display: inline;
  		font: 700 1.25rem/1.75rem 'IBM Plex Mono',SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
 		font-size: 100%;
@@ -319,7 +319,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	main article h5 {
-		border-bottom: 1px solid #CDCDCD;		
+		border-bottom: 1px solid var(--gray-300);		
 		font: 700 1.25rem/1.25rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
  		letter-spacing: -.075rem;
  		margin: 0 0 1.5rem;
@@ -342,7 +342,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	main article p {
-		color: #3D3D3D;
+		color: var(--gray-700);
 		font: 400 1rem/1.5rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
 		margin-bottom: 1.75rem;
 	}
@@ -358,7 +358,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	main article li {
-		color: #3D3D3D;
+		color: var(--gray-700);
 		font: 400 1rem/1.5rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
 		margin-bottom: .5rem;
 	}
@@ -384,7 +384,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
  	main article header .entry-meta p,
  	main article header .entry-meta p a {
- 		color: #1D1D1D;
+ 		color: var(--gray-900);
 		font: 400 1rem/1.5rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
  	}
 
@@ -483,9 +483,9 @@ main article .wpcf7-form textarea {
     width: 100%;
     margin-top: 0.5rem;
     padding: 0.75rem 1rem;
-    border: 1px solid #CDCDCD;
+    border: 1px solid var(--gray-300);
     font: 400 1rem/1.5rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
-    color: #1D1D1D;
+    color: var(--gray-900);
 }
 
 main article .wpcf7-form textarea {
@@ -498,7 +498,7 @@ main article .wpcf7-form textarea {
 		@media (min-width: 100px) and (max-width: 800px) {
 
 			body {
-				background: linear-gradient(90deg, #EDEDED 24px, transparent 1%) center, linear-gradient(#EDEDED 24px, transparent 1%) center, #9D9D9D;
+				background: linear-gradient(90deg, var(--gray-100) 24px, transparent 1%) center, linear-gradient(var(--gray-100) 24px, transparent 1%) center, var(--gray-500);
 		  		background-size: 25px 25px;
 			}
 
