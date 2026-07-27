@@ -13,6 +13,8 @@
 <meta id="MetaKeywords" name="KEYWORDS" content="podcasting,podcasts,podcast standards project,podcast standards">
 
 <link rel="stylesheet" href="<?php echo esc_url( get_stylesheet_uri() ); ?>" media="all">
+
+<!-- IMPORT FONTS -->
 <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
