@@ -124,7 +124,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		background-color: var(--gray-100);
 		border-top: 10px solid var(--color-border-accent);
 		border-bottom: 10px solid var(--color-border-accent);
-		color: var(--gray-900);
+		color: var(--color-ink);
 		font-family: 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
 		margin:  0 auto;
 		padding: 0;
@@ -156,7 +156,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	header nav ul li a { 
-		color: var(--gray-900);
+		color: var(--color-ink);
 		text-decoration: none; 
 	}
 
@@ -215,7 +215,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 .dark	{ 
-	background-color: var(--gray-900); 
+	background-color: var(--color-surface-inverse); 
 	box-shadow: var(--shadow-card);
 }
 
@@ -232,7 +232,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /* 	SECTION -- FOOTER */
 
 	footer {
-		background-color: var(--gray-900);
+		background-color: var(--color-surface-inverse);
 		color: var(--gray-100);
 	}
 
@@ -406,7 +406,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
  	main article header .entry-meta p,
  	main article header .entry-meta p a {
- 		color: var(--gray-900);
+ 		color: var(--color-ink);
 		font: 400 1rem/1.5rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
  	}
 
@@ -507,7 +507,7 @@ main article .wpcf7-form textarea {
     padding: 0.75rem 1rem;
     border: 1px solid var(--gray-300);
     font: 400 1rem/1.5rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
-    color: var(--gray-900);
+    color: var(--color-ink);
 }
 
 main article .wpcf7-form textarea {
