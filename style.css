@@ -364,7 +364,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	main article p {
-		color: var(--gray-700);
+		color: var(--color-ink-body);
 		font: 400 1rem/1.5rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
 		margin-bottom: 1.75rem;
 	}
@@ -380,7 +380,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	main article li {
-		color: var(--gray-700);
+		color: var(--color-ink-body);
 		font: 400 1rem/1.5rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
 		margin-bottom: .5rem;
 	}
