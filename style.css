@@ -121,7 +121,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	body {
-		background-color: var(--gray-100);
+		background-color: var(--color-surface-page);
 		border-top: 10px solid var(--color-border-accent);
 		border-bottom: 10px solid var(--color-border-accent);
 		color: var(--color-ink);
@@ -129,7 +129,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		margin:  0 auto;
 		padding: 0;
 		min-height: 100vh;
-		background: linear-gradient(90deg, var(--gray-100) 24px, transparent 1%) center, linear-gradient(var(--gray-100) 24px, transparent 1%) center, var(--gray-500);
+		background: linear-gradient(90deg, var(--color-surface-page) 24px, transparent 1%) center, linear-gradient(var(--color-surface-page) 24px, transparent 1%) center, var(--gray-500);
   		background-size: 25px 25px;
 	}
 
@@ -190,7 +190,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 	header div section h2 {
 		align-self: end;
-		color: var(--gray-100);
+		color: var(--color-ink-on-inverse);
 		font: 400 1.15rem/2rem 'Inter',-apple-system,BlinkMacSystemFont,Helvetica, sans-serif;
 	}
 
@@ -233,7 +233,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 	footer {
 		background-color: var(--color-surface-inverse);
-		color: var(--gray-100);
+		color: var(--color-ink-on-inverse);
 	}
 
 	footer section {
@@ -251,7 +251,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	footer ul li a { 
-		color: var(--gray-100);
+		color: var(--color-ink-on-inverse);
 	}
 
 	footer ul li a:hover { 
@@ -520,7 +520,7 @@ main article .wpcf7-form textarea {
 		@media (min-width: 100px) and (max-width: 800px) {
 
 			body {
-				background: linear-gradient(90deg, var(--gray-100) 24px, transparent 1%) center, linear-gradient(var(--gray-100) 24px, transparent 1%) center, var(--gray-500);
+				background: linear-gradient(90deg, var(--color-surface-page) 24px, transparent 1%) center, linear-gradient(var(--color-surface-page) 24px, transparent 1%) center, var(--gray-500);
 		  		background-size: 25px 25px;
 			}
 
