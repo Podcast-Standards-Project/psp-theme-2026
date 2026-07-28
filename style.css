@@ -296,7 +296,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	pre code { 
 		background: var(--gray-800);
 		border-radius: 5px;
-		color: var(--gray-200);
+		color: var(--color-ink-on-codeblock);
 		display: block;
  		font: 400 1rem/1.5rem 'IBM Plex Mono',SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
 		font-size: 90%;
