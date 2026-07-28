@@ -72,6 +72,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 	--color-border-hairline:       var(--gray-300);    /* h5 rule, form inputs */
 	--color-border-accent:         var(--psp-orange);  /* body top/bottom, blockquote */
+
+	/* --- Shadows ---------------------------------------- */
+	--shadow-card: 0 0.938em 2.188em rgba(50,50,50,.1),
+	               0 0.313em 0.938em rgba(0,0,0,.07);
 }
 
 /* 	FOUNDATION */
@@ -197,7 +201,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 	main article {
 		background: var(--gray-000);
-		box-shadow: 0 0.938em 2.188em rgba(50,50,50,.1), 0 0.313em 0.938em rgba(0,0,0,.07);	
+		box-shadow: var(--shadow-card);
 		max-width: 1200px;
 		margin: -2rem auto 4rem;	
 		padding: 6rem 12rem;	
@@ -207,12 +211,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 .light 	{ 
 	background-color: var(--gray-000); 
-	box-shadow: 0 0.938em 2.188em rgba(50,50,50,.1), 0 0.313em 0.938em rgba(0,0,0,.07);	
+	box-shadow: var(--shadow-card);
 }
 
 .dark	{ 
 	background-color: var(--gray-900); 
-	box-shadow: 0 0.938em 2.188em rgba(50,50,50,.1), 0 0.313em 0.938em rgba(0,0,0,.07);	
+	box-shadow: var(--shadow-card);
 }
 
 
