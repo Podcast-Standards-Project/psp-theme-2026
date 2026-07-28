@@ -76,6 +76,11 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	/* --- Shadows ---------------------------------------- */
 	--shadow-card: 0 0.938em 2.188em rgba(50,50,50,.1),
 	               0 0.313em 0.938em rgba(0,0,0,.07);
+	
+	/* --- Fonts  ---------------------------------------- */
+	--font-family-sans:    'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+	--font-family-display: 'Bebas Neue', sans-serif;
+	--font-family-mono:    'IBM Plex Mono', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
 }
 
 /* 	FOUNDATION */
@@ -125,7 +130,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		border-top: 10px solid var(--color-border-accent);
 		border-bottom: 10px solid var(--color-border-accent);
 		color: var(--color-ink);
-		font-family: 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+		font-family: var(--font-family-sans);
 		margin:  0 auto;
 		padding: 0;
 		min-height: 100vh;
@@ -151,7 +156,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	header nav ul {
-		font: 700 1.25rem/7.25rem 'Inter',-apple-system,BlinkMacSystemFont,Helvetica, sans-serif;
+		font: 700 1.25rem/7.25rem var(--font-family-sans);
 		letter-spacing: -.075rem;
 	}
 
@@ -191,7 +196,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	header div section h2 {
 		align-self: end;
 		color: var(--color-ink-on-inverse);
-		font: 400 1.15rem/2rem 'Inter',-apple-system,BlinkMacSystemFont,Helvetica, sans-serif;
+		font: 400 1.15rem/2rem var(--font-family-sans);
 	}
 
 	header div section img { 
@@ -261,7 +266,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	footer#footer,
 	footer#footer p,
 	footer#footer ul li {
-		font: 400 1rem/1.5rem 'Inter',-apple-system,BlinkMacSystemFont,Helvetica, sans-serif;
+		font: 400 1rem/1.5rem var(--font-family-sans);
 	}
 
 /* 	TYPOGRAPHY */
@@ -276,12 +281,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	h3 {
-		font: 700 2rem/2.5rem 'Inter',-apple-system,BlinkMacSystemFont,Helvetica, sans-serif;
+		font: 700 2rem/2.5rem var(--font-family-sans);
  		letter-spacing: -.09rem;
 	}
 
   	p {
-		font: 400 1.15rem/2rem 'Inter',-apple-system,BlinkMacSystemFont,Helvetica, sans-serif;
+		font: 400 1.15rem/2rem var(--font-family-sans);
 		margin-bottom: 2rem;
  	}
 
@@ -330,7 +335,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 	main article h4 {
 	 	color: var(--color-accent);
-		font: 700 1.5rem/1.5rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+		font: 700 1.5rem/1.5rem var(--font-family-sans);
  		letter-spacing: -.075rem;
  		margin-bottom: 1.5rem;
 	}
@@ -342,7 +347,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 	main article h5 {
 		border-bottom: 1px solid var(--color-border-hairline);		
-		font: 700 1.25rem/1.25rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+		font: 700 1.25rem/1.25rem var(--font-family-sans);
  		letter-spacing: -.075rem;
  		margin: 0 0 1.5rem;
  		padding-bottom: 1rem;
@@ -353,7 +358,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	main article nav p {
-		font: 700 .8rem/2.5rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+		font: 700 .8rem/2.5rem var(--font-family-sans);
 		text-transform: uppercase;
 		letter-spacing: .075rem;
 	}
@@ -365,12 +370,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 	main article p {
 		color: var(--color-ink-body);
-		font: 400 1rem/1.5rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+		font: 400 1rem/1.5rem var(--font-family-sans);
 		margin-bottom: 1.75rem;
 	}
 
 	main article p strong {
-		font: 800 1rem/1.5rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+		font: 800 1rem/1.5rem var(--font-family-sans);
 	}
 
 	main article ul {
@@ -381,7 +386,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 	main article li {
 		color: var(--color-ink-body);
-		font: 400 1rem/1.5rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+		font: 400 1rem/1.5rem var(--font-family-sans);
 		margin-bottom: .5rem;
 	}
 
@@ -407,7 +412,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
  	main article header .entry-meta p,
  	main article header .entry-meta p a {
  		color: var(--color-ink);
-		font: 400 1rem/1.5rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+		font: 400 1rem/1.5rem var(--font-family-sans);
  	}
 
 /* 	MEMBERS LIST */
@@ -448,7 +453,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 	.memberslist ul li small {		
 		display: block;
-		font: 400 .75rem/.75rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+		font: 400 .75rem/.75rem var(--font-family-sans);
 		margin: 0 auto 1.25rem;
 		text-align: center;
 		text-transform: uppercase;
@@ -462,7 +467,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 	.memberslist ul li.comingsoon small {		
 		display: block;
-		font: 400 .75rem/.75rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+		font: 400 .75rem/.75rem var(--font-family-sans);
 		margin: 0 auto 1.25rem;
 		text-align: center;
 		text-transform: uppercase;
@@ -506,7 +511,7 @@ main article .wpcf7-form textarea {
     margin-top: 0.5rem;
     padding: 0.75rem 1rem;
     border: 1px solid var(--color-border-hairline);
-    font: 400 1rem/1.5rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+    font: 400 1rem/1.5rem var(--font-family-sans);
     color: var(--color-ink);
 }
 
@@ -535,7 +540,7 @@ main article .wpcf7-form textarea {
 			}
 
 			header nav ul {
-				font: 700 1.1rem/1rem 'Inter',-apple-system,BlinkMacSystemFont,Helvetica, sans-serif;
+				font: 700 1.1rem/1rem var(--font-family-sans);
 				letter-spacing: -.075rem;
 			}
 
@@ -561,7 +566,7 @@ main article .wpcf7-form textarea {
 			}
 			
 			header div section h2 {
-				font: 400 1.15rem/2rem 'Inter',-apple-system,BlinkMacSystemFont,Helvetica, sans-serif;
+				font: 400 1.15rem/2rem var(--font-family-sans);
 			}
 
 			main div section h3 {
