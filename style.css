@@ -54,6 +54,24 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	--gray-700: #3D3D3D;
 	--gray-800: #2D2D2D;
 	--gray-900: #1D1D1D;
+
+	/* --- Semantic aliases ------------------------------- */
+	--color-accent:          var(--psp-orange);  /* links, rules, h1, h4 */
+
+	--color-ink:             var(--gray-900);    /* body + nav text */
+	--color-ink-body:        var(--gray-700);    /* article p and li */
+	--color-ink-inline-code: var(--gray-600);
+	--color-ink-on-inverse:        var(--gray-100);    /* footer text + links */
+	--color-ink-on-codeblock:      var(--gray-200);
+
+	--color-surface-page:          var(--gray-100);    /* grid tile fill */
+	--color-surface-grid:          var(--gray-500);    /* grid line beneath */
+	--color-surface-card:          var(--gray-000);    /* .light, main article */
+	--color-surface-inverse:       var(--gray-900);    /* .dark, footer */
+	--color-surface-codeblock:     var(--gray-800);
+
+	--color-border-hairline:       var(--gray-300);    /* h5 rule, form inputs */
+	--color-border-accent:         var(--psp-orange);  /* body top/bottom, blockquote */
 }
 
 /* 	FOUNDATION */
@@ -100,8 +118,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 	body {
 		background-color: var(--gray-100);
-		border-top: 10px solid var(--psp-orange);
-		border-bottom: 10px solid var(--psp-orange);
+		border-top: 10px solid var(--color-border-accent);
+		border-bottom: 10px solid var(--color-border-accent);
 		color: var(--gray-900);
 		font-family: 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
 		margin:  0 auto;
@@ -139,7 +157,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	header nav ul li.active a { 
-		color: var(--psp-orange);
+		color: var(--color-accent);
 	}
 
 	header nav ul li {
@@ -161,7 +179,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	header div section h1 {
-		color: var(--psp-orange);
+		color: var(--color-accent);
 		font: 800 8rem/6rem 'Bebas Neue', sans-serif;
 		text-transform: uppercase;
 	}
@@ -233,7 +251,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	footer ul li a:hover { 
-		color: var(--psp-orange);
+		color: var(--color-accent);
 	}
 
 	footer#footer,
@@ -249,7 +267,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	blockquote {
-		border-left: 4px solid var(--psp-orange);
+		border-left: 4px solid var(--color-border-accent);
 		padding-left: 2rem;
 	}
 
@@ -264,7 +282,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
  	}
 
 	p a {
-		color: var(--psp-orange);
+		color: var(--color-accent);
 	}
 
 	pre {
@@ -293,7 +311,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	code a {
-		color: var(--psp-orange)!important;
+		color: var(--color-accent)!important;
 	}
 
 	main article h2 {
@@ -307,7 +325,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	main article h4 {
-	 	color: var(--psp-orange);
+	 	color: var(--color-accent);
 		font: 700 1.5rem/1.5rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
  		letter-spacing: -.075rem;
  		margin-bottom: 1.5rem;
@@ -338,7 +356,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 	main article nav a,
 	main article ul li a {
-		color: var(--psp-orange);
+		color: var(--color-accent);
 	}
 
 	main article p {
@@ -368,7 +386,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
  	main article p a {
- 		color: var(--psp-orange);
+ 		color: var(--color-accent);
  	}
 
  	main article hr { 
@@ -378,7 +396,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
  	main article header h1 a,
  	main article header h2 a {
- 	 		color: var(--psp-orange);
+ 	 		color: var(--color-accent);
 			text-decoration: none;
  	}
 
