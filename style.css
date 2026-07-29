@@ -271,10 +271,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		padding: 0;
 	}
 
-	code a {
-		color: #F05A28!important;
+	code a, a code {
+		color: #F05A28;
 	}
-
+	
 	main article h2 {
 		font: 400 2.25rem/2.25rem 'Bebas Neue', sans-serif;
  		margin: 1rem 0;
