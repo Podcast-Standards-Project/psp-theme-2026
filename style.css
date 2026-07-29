@@ -250,7 +250,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		white-space: pre-wrap;
 	}
 
-	pre code { 
+	pre code, pre.wp-block-code code { 
 		background: #2d2d2d;
 		border-radius: 5px;
 		color: #ddd;
@@ -259,22 +259,25 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		font-size: 90%;
 		margin-bottom: 1.75rem;
 		padding: 1.5rem;
+		border: none;
 	}
 
-	p code {
+	code {
 		background: inherit;
 		color: #5D5D5D;
 		display: inline;
- 		font: 700 1.25rem/1.75rem 'IBM Plex Mono',SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-		font-size: 100%;
+ 		font: 400 1.25rem/1.75rem 'IBM Plex Mono',SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+		font-size: 90%;
 		margin-bottom: 0;
-		padding: 0;
+		padding: 0.2em 0.3em;
+		border-radius: 5px;
+		border: 1px solid #CDCDCD;
 	}
 
-	code a {
-		color: #F05A28!important;
+	code a, a code {
+		color: #F05A28;
 	}
-
+	
 	main article h2 {
 		font: 400 2.25rem/2.25rem 'Bebas Neue', sans-serif;
  		margin: 1rem 0;
