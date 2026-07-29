@@ -268,7 +268,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
  		font: 700 1.25rem/1.75rem 'IBM Plex Mono',SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
 		font-size: 100%;
 		margin-bottom: 0;
-		padding: 0;
+		padding: 0.2em 0.3em;
+		border-radius: 5px;
+		border: 1px solid #CDCDCD;
 	}
 
 	code a, a code {
