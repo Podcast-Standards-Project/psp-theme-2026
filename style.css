@@ -56,22 +56,22 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	--gray-900: #1D1D1D;
 
 	/* --- Semantic aliases ------------------------------- */
-	--color-accent:          var(--psp-orange);  /* links, rules, h1, h4 */
+	--color-accent:            var(--psp-orange);  /* links, rules, h1, h4 */
 
-	--color-ink:             var(--gray-900);    /* body + nav text */
-	--color-ink-body:        var(--gray-700);    /* article p and li */
-	--color-ink-inline-code: var(--gray-600);
-	--color-ink-on-inverse:        var(--gray-100);    /* footer text + links */
-	--color-ink-on-codeblock:      var(--gray-200);
+	--color-ink:               var(--gray-900);    /* body + nav text */
+	--color-ink-body:          var(--gray-700);    /* article p and li */
+	--color-ink-inline-code:   var(--gray-600);
+	--color-ink-on-inverse:    var(--gray-100);    /* footer text + links */
+	--color-ink-on-codeblock:  var(--gray-200);
 
-	--color-surface-page:          var(--gray-100);    /* grid tile fill */
-	--color-surface-grid:          var(--gray-500);    /* grid line beneath */
-	--color-surface-card:          var(--gray-000);    /* .light, main article */
-	--color-surface-inverse:       var(--gray-900);    /* .dark, footer */
-	--color-surface-codeblock:     var(--gray-800);
+	--color-surface-page:      var(--gray-100);    /* grid tile fill */
+	--color-surface-grid:      var(--gray-500);    /* grid line beneath */
+	--color-surface-card:      var(--gray-000);    /* .light, main article */
+	--color-surface-inverse:   var(--gray-900);    /* .dark, footer */
+	--color-surface-codeblock: var(--gray-800);
 
-	--color-border-hairline:       var(--gray-300);    /* h5 rule, form inputs */
-	--color-border-accent:         var(--psp-orange);  /* body top/bottom, blockquote */
+	--color-border-hairline:   var(--gray-300);    /* h5 rule, form inputs */
+	--color-border-accent:     var(--psp-orange);  /* body top/bottom, blockquote */
 
 	/* --- Shadows ---------------------------------------- */
 	--shadow-card: 0 0.938em 2.188em rgba(50,50,50,.1),
