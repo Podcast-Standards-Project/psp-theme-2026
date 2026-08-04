@@ -81,6 +81,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	--font-family-sans:    'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
 	--font-family-display: 'Bebas Neue', sans-serif;
 	--font-family-mono:    'IBM Plex Mono', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+
+	/* --- Common Spacing -------------------------------- */
+	--space-after-blog-block: 1.75rem;
 }
 
 /* 	FOUNDATION */
@@ -305,7 +308,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		display: block;
  		font: 400 1rem/1.5rem var(--font-family-mono);
 		font-size: 90%;
-		margin-bottom: 1.75rem;
+		margin-bottom: var(--space-after-blog-block);
 		padding: 1.5rem;
 		border: none;
 	}
@@ -374,7 +377,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	main article p {
 		color: var(--color-ink-body);
 		font: 400 1rem/1.5rem var(--font-family-sans);
-		margin-bottom: 1.75rem;
+		margin-bottom: var(--space-after-blog-block);
 	}
 
 	main article p strong {
@@ -384,7 +387,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	main article ul {
 		list-style-type: disc;
 		padding-left: 2rem;
-		margin-bottom: 1.75rem;
+		margin-bottom: var(--space-after-blog-block);
 	}
 
 	main article li {
@@ -394,7 +397,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	main article img {
-		margin-bottom: 1.75rem;		
+		margin-bottom: var(--space-after-blog-block);		
 	}
 
  	main article p a {
@@ -403,7 +406,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
  	main article hr { 
  		height: 4rem; 
- 		margin-bottom: 1.75rem;
+ 		margin-bottom: var(--space-after-blog-block);
  	}
 
  	main article header h1 a,
@@ -486,7 +489,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /* Stop the catch-all `main article span` rule from adding a huge gap under embeds */
 main article span.embed-youtube {
-    margin-bottom: 1.75rem;
+    margin-bottom: var(--space-after-blog-block);
 }
 
 /* CONTACT FORM (Contact Form 7) */
