@@ -18,10 +18,11 @@ This repository contains the WordPress theme for the Podcast Standards Project w
 - Click **Connect a Site**  
 - Select the PSP site  
 - Open the site's **Sync** tab and click **Pull**  
-- For this first time, pull all files and database.  
-  * If you need to pull site updates in the future, select “Specific files and folders” and exclude the Themes folder\!  
+- For this first time, pull all files and database. 
+  * If you need to pull site updates in the future, select “Specific files and folders” and exclude the Themes folder!  
   * Do NOT use Studio’s Push feature  
 - If the pull errors out and you get cryptic errors, just delete the site in Studio and start over
+- Click **Disconnect** to avoid syncing with the live site while you are developing.
 
 ### Connect local theme folder to the git repo 
 
