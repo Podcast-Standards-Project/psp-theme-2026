@@ -26,14 +26,66 @@ update: 	1.5 — 03/27/23
 
 /* TODO: properly update all style header stuff for psp-theme-2026 */
 
+/* BOILERPLATE */
+
+/* meyer reset */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}html{scroll-behavior:smooth}body{line-height:1}a{text-decoration-skip-ink:auto}a[href^="tel"]{color:inherit;text-decoration:none}button{outline:0}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}q{display:inline;font-style:italic}q:before{content:'"';font-style:normal}q:after{content:'"';font-style:normal}textarea,input[type="text"],input[type="button"],input[type="submit"],input[type="reset"],input[type="search"],input[type="password"]{-webkit-appearance:none;appearance:none;border-radius:0}input[type="search"]{-webkit-appearance:textfield}table{border-collapse:collapse;border-spacing:0}th,td{padding:2px}big{font-size:120%}small,sup,sub{font-size:80%}sup{vertical-align:super}sub{vertical-align:sub}dd{margin-left:20px}kbd,tt{font-family:courier;font-size:12px}ins{text-decoration:underline}del,strike,s{text-decoration:line-through}dt{font-weight:bold}address,cite,var{font-style:italic}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+/* wordpress boilerplate */
 .sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}
+/* accesibility boilerplate */
 .screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute!important;width:1px;word-wrap:normal!important;word-break:normal}
 .screen-reader-text:focus{background-color:#f7f7f7;border-radius:3px;box-shadow:0 0 2px 2px rgba(0,0,0,.6);clip:auto!important;-webkit-clip-path:none;clip-path:none;color:#007acc;display:block;font-size:14px;font-size:.875rem;font-weight:700;height:auto;right:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
 .skip-link{left:-9999rem;top:2.5rem;z-index:999999999;text-decoration:underline}
 .skip-link:focus{display:block;left:6px;top:7px;font-size:14px;font-weight:600;text-decoration:none;line-height:normal;padding:15px 23px 14px;z-index:100000;right:auto}
 .visually-hidden:not(:focus):not(:active), .form-allowed-tags:not(:focus):not(:active){position:absolute !important;height:1px;width:1px;overflow:hidden;clip:rect(1px 1px 1px 1px);clip:rect(1px, 1px, 1px, 1px);white-space:nowrap}
-          
+
+/* VARIABLES */
+
+:root {
+	/* --- Primitives ------------------------------------- */
+	--psp-orange: #F05A28;
+
+	--gray-000: #FFFFFF;
+	--gray-100: #EDEDED;
+	--gray-200: #DDDDDD;
+	--gray-300: #CDCDCD;
+	--gray-500: #9D9D9D;
+	--gray-600: #5D5D5D;
+	--gray-700: #3D3D3D;
+	--gray-800: #2D2D2D;
+	--gray-900: #1D1D1D;
+
+	/* --- Semantic aliases ------------------------------- */
+	--color-accent:            var(--psp-orange);  /* links, rules, h1, h4 */
+
+	--color-ink:               var(--gray-900);    /* body + nav text */
+	--color-ink-body:          var(--gray-700);    /* article p and li */
+	--color-ink-inline-code:   var(--gray-600);
+	--color-ink-on-inverse:    var(--gray-100);    /* footer text + links */
+	--color-ink-on-codeblock:  var(--gray-200);
+
+	--color-surface-page:      var(--gray-100);    /* grid tile fill */
+	--color-surface-grid:      var(--gray-500);    /* grid line beneath */
+	--color-surface-card:      var(--gray-000);    /* .light, main article */
+	--color-surface-inverse:   var(--gray-900);    /* .dark, footer */
+	--color-surface-codeblock: var(--gray-800);
+
+	--color-border-hairline:   var(--gray-300);    /* h5 rule, form inputs */
+	--color-border-accent:     var(--psp-orange);  /* body top/bottom, blockquote */
+
+	/* --- Shadows ---------------------------------------- */
+	--shadow-card: 0 0.938em 2.188em rgba(50,50,50,.1),
+	               0 0.313em 0.938em rgba(0,0,0,.07);
+	
+	/* --- Fonts  ---------------------------------------- */
+	--font-family-sans:    'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+	--font-family-display: 'Bebas Neue', sans-serif;
+	--font-family-mono:    'IBM Plex Mono', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+
+	/* --- Common Spacing -------------------------------- */
+	--space-after-blog-block: 1.75rem;
+	--padding-section-y: 4rem;
+}
 
 /* 	FOUNDATION */
 
@@ -45,7 +97,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	fieldset, form, label, legend,
 	table, caption, tbody, tfoot, thead, tr, th, td {
 		box-sizing: border-box;
-		font-smoothing: antialiased;
+		-webkit-font-smoothing: antialiased;
 		margin: 0;
 		padding: 0;
 		outline: none;
@@ -78,15 +130,15 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	body {
-		background-color: #EDEDED;
-		border-top: 10px solid #F05A28;
-		border-bottom: 10px solid #F05A28;
-		color: #1D1D1D;
-		font-family: 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+		background-color: var(--color-surface-page);
+		border-top: 10px solid var(--color-border-accent);
+		border-bottom: 10px solid var(--color-border-accent);
+		color: var(--color-ink);
+		font-family: var(--font-family-sans);
 		margin:  0 auto;
 		padding: 0;
 		min-height: 100vh;
-		background: linear-gradient(90deg, #EDEDED 24px, transparent 1%) center, linear-gradient(#EDEDED 24px, transparent 1%) center, #9D9D9D;
+		background: linear-gradient(90deg, var(--color-surface-page) 24px, transparent 1%) center, linear-gradient(var(--color-surface-page) 24px, transparent 1%) center, var(--color-surface-grid);
   		background-size: 25px 25px;
 	}
 
@@ -96,7 +148,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	    display: grid;
 	    grid-template-columns: 45% 45%;
 	    grid-gap: 10%;
-	    padding: 4rem 0;
+	    padding: var(--padding-section-y) 0;
 	}
 
 	header nav h1 {
@@ -108,17 +160,17 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	header nav ul {
-		font: 700 1.25rem/7.25rem 'Inter',-apple-system,BlinkMacSystemFont,Helvetica, sans-serif;
+		font: 700 1.25rem/7.25rem var(--font-family-sans);
 		letter-spacing: -.075rem;
 	}
 
 	header nav ul li a { 
-		color: #1D1D1D;
+		color: var(--color-ink);
 		text-decoration: none; 
 	}
 
 	header nav ul li.active a { 
-		color: #F05A28;
+		color: var(--color-accent);
 	}
 
 	header nav ul li {
@@ -134,21 +186,21 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	header div {}
 
 	header div section {
-		padding: 4rem 0;
+		padding: var(--padding-section-y) 0;
 		display: grid;
 	    grid-template-columns: 70% 30%;
 	}
 
 	header div section h1 {
-		color: #F05A28;
-		font: 800 8rem/6rem 'Bebas Neue', sans-serif;
+		color: var(--color-accent);
+		font: 800 8rem/6rem var(--font-family-display);
 		text-transform: uppercase;
 	}
 
 	header div section h2 {
 		align-self: end;
-		color: #EDEDED;
-		font: 400 1.15rem/2rem 'Inter',-apple-system,BlinkMacSystemFont,Helvetica, sans-serif;
+		color: var(--color-ink-on-inverse);
+		font: 400 1.15rem/2rem var(--font-family-sans);
 	}
 
 	header div section img { 
@@ -157,8 +209,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	main article {
-		background: #fff;
-		box-shadow: 0 0.938em 2.188em rgba(50,50,50,.1), 0 0.313em 0.938em rgba(0,0,0,.07);	
+		background: var(--color-surface-card);
+		box-shadow: var(--shadow-card);
 		max-width: 1200px;
 		margin: -2rem auto 4rem;	
 		padding: 6rem 12rem;	
@@ -167,13 +219,13 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /* 	SECTION -- COLORS */
 
 .light 	{ 
-	background-color: #FFF; 
-	box-shadow: 0 0.938em 2.188em rgba(50,50,50,.1), 0 0.313em 0.938em rgba(0,0,0,.07);	
+	background-color: var(--color-surface-card); 
+	box-shadow: var(--shadow-card);
 }
 
 .dark	{ 
-	background-color: #1D1D1D; 
-	box-shadow: 0 0.938em 2.188em rgba(50,50,50,.1), 0 0.313em 0.938em rgba(0,0,0,.07);	
+	background-color: var(--color-surface-inverse); 
+	box-shadow: var(--shadow-card);
 }
 
 
@@ -183,14 +235,14 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		display: grid;
 	    grid-template-columns: 45% 45%;
 	    grid-gap: 10%;
-	    padding: 4rem 0;
+	    padding: var(--padding-section-y) 0;
 	}
 
 /* 	SECTION -- FOOTER */
 
 	footer {
-		background-color: #1D1D1D;
-		color: #EDEDED;
+		background-color: var(--color-surface-inverse);
+		color: var(--color-ink-on-inverse);
 	}
 
 	footer section {
@@ -199,7 +251,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		display: grid;
 	    grid-template-columns: 45% 45%;
 	    grid-gap: 10%;
-	    padding: 4rem 0;
+	    padding: var(--padding-section-y) 0;
 	}
 
 	footer ul li {
@@ -208,17 +260,17 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	footer ul li a { 
-		color: #EDEDED;
+		color: var(--color-ink-on-inverse);
 	}
 
 	footer ul li a:hover { 
-		color: #F05A28;
+		color: var(--color-accent);
 	}
 
 	footer#footer,
 	footer#footer p,
 	footer#footer ul li {
-		font: 400 1rem/1.5rem 'Inter',-apple-system,BlinkMacSystemFont,Helvetica, sans-serif;
+		font: 400 1rem/1.5rem var(--font-family-sans);
 	}
 
 /* 	TYPOGRAPHY */
@@ -228,22 +280,22 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	blockquote {
-		border-left: 4px solid #F05A28;
+		border-left: 4px solid var(--color-border-accent);
 		padding-left: 2rem;
 	}
 
 	h3 {
-		font: 700 2rem/2.5rem 'Inter',-apple-system,BlinkMacSystemFont,Helvetica, sans-serif;
+		font: 700 2rem/2.5rem var(--font-family-sans);
  		letter-spacing: -.09rem;
 	}
 
   	p {
-		font: 400 1.15rem/2rem 'Inter',-apple-system,BlinkMacSystemFont,Helvetica, sans-serif;
+		font: 400 1.15rem/2rem var(--font-family-sans);
 		margin-bottom: 2rem;
  	}
 
 	p a {
-		color: #F05A28;
+		color: var(--color-accent);
 	}
 
 	pre {
@@ -251,46 +303,46 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	pre code, pre.wp-block-code code { 
-		background: #2d2d2d;
+		background: var(--color-surface-codeblock);
 		border-radius: 5px;
-		color: #ddd;
+		color: var(--color-ink-on-codeblock);
 		display: block;
- 		font: 400 1rem/1.5rem 'IBM Plex Mono',SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+ 		font: 400 1rem/1.5rem var(--font-family-mono);
 		font-size: 90%;
-		margin-bottom: 1.75rem;
+		margin-bottom: var(--space-after-blog-block);
 		padding: 1.5rem;
 		border: none;
 	}
 
 	code {
 		background: inherit;
-		color: #5D5D5D;
+		color: var(--color-ink-inline-code);
 		display: inline;
- 		font: 400 1.25rem/1.75rem 'IBM Plex Mono',SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+ 		font: 400 1.25rem/1.75rem var(--font-family-mono);
 		font-size: 90%;
 		margin-bottom: 0;
 		padding: 0.2em 0.3em;
 		border-radius: 5px;
-		border: 1px solid #CDCDCD;
+		border: 1px solid var(--color-border-hairline);
 	}
 
 	code a, a code {
-		color: #F05A28;
+		color: var(--color-accent);
 	}
 	
 	main article h2 {
-		font: 400 2.25rem/2.25rem 'Bebas Neue', sans-serif;
+		font: 400 2.25rem/2.25rem var(--font-family-display);
  		margin: 1rem 0;
 	}
 
 	main article h3 {
-		font: 400 2.5rem/2.5rem 'Bebas Neue', sans-serif;
+		font: 400 2.5rem/2.5rem var(--font-family-display);
  		margin: 2rem 0 2.5rem;
 	}
 
 	main article h4 {
-	 	color: #F05A28;
-		font: 700 1.5rem/1.5rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+	 	color: var(--color-accent);
+		font: 700 1.5rem/1.5rem var(--font-family-sans);
  		letter-spacing: -.075rem;
  		margin-bottom: 1.5rem;
 	}
@@ -301,8 +353,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	main article h5 {
-		border-bottom: 1px solid #CDCDCD;		
-		font: 700 1.25rem/1.25rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+		border-bottom: 1px solid var(--color-border-hairline);		
+		font: 700 1.25rem/1.25rem var(--font-family-sans);
  		letter-spacing: -.075rem;
  		margin: 0 0 1.5rem;
  		padding-bottom: 1rem;
@@ -313,61 +365,61 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 
 	main article nav p {
-		font: 700 .8rem/2.5rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+		font: 700 .8rem/2.5rem var(--font-family-sans);
 		text-transform: uppercase;
 		letter-spacing: .075rem;
 	}
 
 	main article nav a,
 	main article ul li a {
-		color: #F05A28;
+		color: var(--color-accent);
 	}
 
 	main article p {
-		color: #3D3D3D;
-		font: 400 1rem/1.5rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
-		margin-bottom: 1.75rem;
+		color: var(--color-ink-body);
+		font: 400 1rem/1.5rem var(--font-family-sans);
+		margin-bottom: var(--space-after-blog-block);
 	}
 
 	main article p strong {
-		font: 800 1rem/1.5rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+		font: 800 1rem/1.5rem var(--font-family-sans);
 	}
 
 	main article ul {
 		list-style-type: disc;
 		padding-left: 2rem;
-		margin-bottom: 1.75rem;
+		margin-bottom: var(--space-after-blog-block);
 	}
 
 	main article li {
-		color: #3D3D3D;
-		font: 400 1rem/1.5rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+		color: var(--color-ink-body);
+		font: 400 1rem/1.5rem var(--font-family-sans);
 		margin-bottom: .5rem;
 	}
 
 	main article img {
-		margin-bottom: 1.75rem;		
+		margin-bottom: var(--space-after-blog-block);		
 	}
 
  	main article p a {
- 		color: #F05A28;
+ 		color: var(--color-accent);
  	}
 
  	main article hr { 
  		height: 4rem; 
- 		margin-bottom: 1.75rem;
+ 		margin-bottom: var(--space-after-blog-block);
  	}
 
  	main article header h1 a,
  	main article header h2 a {
- 	 		color: #F05A28;
+ 	 		color: var(--color-accent);
 			text-decoration: none;
  	}
 
  	main article header .entry-meta p,
  	main article header .entry-meta p a {
- 		color: #1D1D1D;
-		font: 400 1rem/1.5rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+ 		color: var(--color-ink);
+		font: 400 1rem/1.5rem var(--font-family-sans);
  	}
 
 /* 	MEMBERS LIST */
@@ -408,7 +460,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 	.memberslist ul li small {		
 		display: block;
-		font: 400 .75rem/.75rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+		font: 400 .75rem/.75rem var(--font-family-sans);
 		margin: 0 auto 1.25rem;
 		text-align: center;
 		text-transform: uppercase;
@@ -422,7 +474,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 	.memberslist ul li.comingsoon small {		
 		display: block;
-		font: 400 .75rem/.75rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+		font: 400 .75rem/.75rem var(--font-family-sans);
 		margin: 0 auto 1.25rem;
 		text-align: center;
 		text-transform: uppercase;
@@ -438,7 +490,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /* Stop the catch-all `main article span` rule from adding a huge gap under embeds */
 main article span.embed-youtube {
-    margin-bottom: 1.75rem;
+    margin-bottom: var(--space-after-blog-block);
 }
 
 /* CONTACT FORM (Contact Form 7) */
@@ -465,9 +517,9 @@ main article .wpcf7-form textarea {
     width: 100%;
     margin-top: 0.5rem;
     padding: 0.75rem 1rem;
-    border: 1px solid #CDCDCD;
-    font: 400 1rem/1.5rem 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
-    color: #1D1D1D;
+    border: 1px solid var(--color-border-hairline);
+    font: 400 1rem/1.5rem var(--font-family-sans);
+    color: var(--color-ink);
 }
 
 main article .wpcf7-form textarea {
@@ -480,7 +532,7 @@ main article .wpcf7-form textarea {
 		@media (min-width: 100px) and (max-width: 800px) {
 
 			body {
-				background: linear-gradient(90deg, #EDEDED 24px, transparent 1%) center, linear-gradient(#EDEDED 24px, transparent 1%) center, #9D9D9D;
+				background: linear-gradient(90deg, var(--color-surface-page) 24px, transparent 1%) center, linear-gradient(var(--color-surface-page) 24px, transparent 1%) center, var(--color-surface-grid);
 		  		background-size: 25px 25px;
 			}
 
@@ -495,7 +547,7 @@ main article .wpcf7-form textarea {
 			}
 
 			header nav ul {
-				font: 700 1.1rem/1rem 'Inter',-apple-system,BlinkMacSystemFont,Helvetica, sans-serif;
+				font: 700 1.1rem/1rem var(--font-family-sans);
 				letter-spacing: -.075rem;
 			}
 
@@ -516,12 +568,12 @@ main article .wpcf7-form textarea {
 			}
 
 			header div section h1 {
-				font: 800 5rem/3.75rem 'Bebas Neue', sans-serif;
+				font: 800 5rem/3.75rem var(--font-family-display);
 				text-transform: uppercase;
 			}
 			
 			header div section h2 {
-				font: 400 1.15rem/2rem 'Inter',-apple-system,BlinkMacSystemFont,Helvetica, sans-serif;
+				font: 400 1.15rem/2rem var(--font-family-sans);
 			}
 
 			main div section h3 {
