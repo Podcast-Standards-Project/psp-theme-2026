@@ -417,9 +417,14 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
  	main article header h1 a,
  	main article header h2 a {
- 	 		color: var(--color-accent);
-			text-decoration: none;
+ 	 	color: var(--color-accent);
+		text-decoration: none;
  	}
+
+	main article header h1 a:hover,
+	main article header h2 a:hover {
+		text-decoration: underline;
+	}
 
  	main article header .entry-meta p,
  	main article header .entry-meta p a {
