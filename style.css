@@ -169,6 +169,11 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		text-decoration: none; 
 	}
 
+	header nav ul li a:hover {
+		color: var(--color-accent);
+		text-decoration: underline;
+	}
+
 	header nav ul li.current-menu-item a { 
 		color: var(--color-accent);
 	}
