@@ -392,13 +392,13 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 	main article ul {
 		list-style-type: disc;
-		padding-left: 2rem;
+		padding-left: 3rem;
 		margin-bottom: var(--space-after-blog-block);
 	}
 
 	main article ol {
 		list-style-type: decimal;
-		padding-left: 2rem;
+		padding-left: 3rem;
 		margin-bottom: var(--space-after-blog-block);
 	}
 
