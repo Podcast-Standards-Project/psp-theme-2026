@@ -140,6 +140,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		min-height: 100vh;
 		background: linear-gradient(90deg, var(--color-surface-page) 24px, transparent 1%) center, linear-gradient(var(--color-surface-page) 24px, transparent 1%) center, var(--color-surface-grid);
   		background-size: 25px 25px;
+		overflow-wrap: break-word;
 	}
 
 	header nav {
