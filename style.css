@@ -356,6 +356,13 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
  		margin-bottom: 1.5rem;
 	}
 
+	main article :is(h1, h2, h3, h4, h5, h6) strong {
+		font-weight: inherit;
+	}
+	main article :is(h1, h2, h3, h4, h5, h6) em {
+		font-style: normal;
+	}
+
 	main article span {
 		display: block;
 		margin-bottom: 6rem;
