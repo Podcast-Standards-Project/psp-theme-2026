@@ -496,6 +496,11 @@ main article span.embed-youtube {
     margin-bottom: var(--space-after-blog-block);
 }
 
+/* more embed stuff */
+iframe {
+	max-width: 100%;
+}
+
 /* CONTACT FORM (Contact Form 7) */
 
 /* Stop the catch-all `main article span` rule from hijacking CF7 field wrappers */
