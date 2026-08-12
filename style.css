@@ -284,6 +284,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		font-style: italic;
 	}
 
+	strong {
+		font-weight: 800;
+	}
+
 	blockquote {
 		border-left: 4px solid var(--color-border-accent);
 		padding-left: 2rem;
@@ -384,10 +388,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		color: var(--color-ink-body);
 		font: 400 1rem/1.5rem var(--font-family-sans);
 		margin-bottom: var(--space-after-blog-block);
-	}
-
-	main article strong {
-		font-weight: 800;
 	}
 
 	main article ul {
