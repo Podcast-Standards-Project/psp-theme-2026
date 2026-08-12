@@ -396,6 +396,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		margin-bottom: var(--space-after-blog-block);
 	}
 
+	main article ol {
+		list-style-type: decimal;
+		padding-left: 2rem;
+		margin-bottom: var(--space-after-blog-block);
+	}
+
 	main article li {
 		color: var(--color-ink-body);
 		font: 400 1rem/1.5rem var(--font-family-sans);
