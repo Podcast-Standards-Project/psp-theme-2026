@@ -299,10 +299,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		color: var(--color-accent);
 	}
 
-	pre {
-		white-space: pre-wrap;
-	}
-
 	pre code, pre.wp-block-code code { 
 		background: var(--color-surface-codeblock);
 		border-radius: 5px;
@@ -313,6 +309,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		margin-bottom: var(--space-after-blog-block);
 		padding: 1.5rem;
 		border: none;
+
+		/* we want to keep lines together for codeblocks, so we enable horizontal scroll instead of breaking words */
+		white-space: pre;
+		overflow-x: auto;
+		overflow-wrap: normal;
+		word-break: normal;
 	}
 
 	code {
