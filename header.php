@@ -12,8 +12,6 @@
 
 <meta id="MetaKeywords" name="KEYWORDS" content="podcasting,podcasts,podcast standards project,podcast standards">
 
-<link rel="stylesheet" href="<?php echo esc_url( get_stylesheet_uri() ); ?>" media="all">
-
 <!-- IMPORT FONTS -->
 <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
