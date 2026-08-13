@@ -140,6 +140,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		min-height: 100vh;
 		background: linear-gradient(90deg, var(--color-surface-page) 24px, transparent 1%) center, linear-gradient(var(--color-surface-page) 24px, transparent 1%) center, var(--color-surface-grid);
   		background-size: 25px 25px;
+		overflow-wrap: break-word;
 	}
 
 	header nav {
@@ -307,10 +308,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		color: var(--color-accent);
 	}
 
-	pre {
-		white-space: pre-wrap;
-	}
-
 	pre code, pre.wp-block-code code { 
 		background: var(--color-surface-codeblock);
 		border-radius: 5px;
@@ -321,6 +318,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		margin-bottom: var(--space-after-blog-block);
 		padding: 1.5rem;
 		border: none;
+
+		/* we want to keep lines together for codeblocks, so we enable horizontal scroll instead of breaking words */
+		white-space: pre;
+		overflow-x: auto;
+		overflow-wrap: normal;
+		word-break: normal;
 	}
 
 	code {
@@ -515,6 +518,11 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /* Stop the catch-all `main article span` rule from adding a huge gap under embeds */
 main article span.embed-youtube {
     margin-bottom: var(--space-after-blog-block);
+}
+
+/* more embed stuff */
+iframe {
+	max-width: 100%;
 }
 
 /* CONTACT FORM (Contact Form 7) */
