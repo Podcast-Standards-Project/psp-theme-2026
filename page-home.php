@@ -75,10 +75,6 @@
 						<p>Podtoo</p>
 					</li>
 					<li>
-						<a href="https://alitu.com/"><img src="https://podstandards.org/wp-content/uploads/2025/07/alitu.png"></a>
-						<p>Alitu</p>
-					</li>
-					<li>
 						<a href="https://dovetail.prx.org/"><img src="https://podstandards.org/wp-content/uploads/2025/10/prx-logo.png"></a>
 						<p>PRX Dovetail</p>
 					</li>
