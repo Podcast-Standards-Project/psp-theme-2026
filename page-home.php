@@ -82,6 +82,10 @@
 						<a href="https://www.podpage.com/"><img src="https://podstandards.org/wp-content/uploads/2025/03/podpage-logo.png"></a>
 						<p>Podpage</p>
 					</li>
+					<li>
+						<a href="https://disctopia.com/"><img src="https://podstandards.org/wp-content/uploads/2026/08/disctopia.png"></a>
+						<p>Disctopia<p>
+					</li>
 					<li class="comingsoon">
 						<small>Coming Soon</small>
 						<a href="https://www.podigee.com/en/"><img src="https://podstandards.org/wp-content/uploads/2025/03/podigee-logo.png"></a>
@@ -126,6 +130,10 @@
 					<li>
 						<a href="https://anytimeplayer.app/"><img src="https://podstandards.org/wp-content/uploads/2025/03/anytime-player.png"></a>
 						<p>Anytime Podcast Player</p>
+					</li>
+					<li>
+						<a href="https://disctopia.com/"><img src="https://podstandards.org/wp-content/uploads/2026/08/disctopia.png"></a>
+						<p>Disctopia<p>
 					</li>
 				</ul>
 			</section>
