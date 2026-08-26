@@ -83,6 +83,10 @@
 						<p>Podpage</p>
 					</li>
 					<li>
+						<a href="https://truefans.fm/"><img src="https://podstandards.org/wp-content/uploads/2025/07/truefans.png"></a>
+						<p>TrueFans</p>
+					</li>
+					<li>
 						<a href="https://disctopia.com/"><img src="https://podstandards.org/wp-content/uploads/2026/08/disctopia.png"></a>
 						<p>Disctopia<p>
 					</li>
