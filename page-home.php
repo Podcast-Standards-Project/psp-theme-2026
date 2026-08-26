@@ -75,16 +75,20 @@
 						<p>Podtoo</p>
 					</li>
 					<li>
-						<a href="https://alitu.com/"><img src="https://podstandards.org/wp-content/uploads/2025/07/alitu.png"></a>
-						<p>Alitu</p>
-					</li>
-					<li>
 						<a href="https://dovetail.prx.org/"><img src="https://podstandards.org/wp-content/uploads/2025/10/prx-logo.png"></a>
 						<p>PRX Dovetail</p>
 					</li>
 					<li>
 						<a href="https://www.podpage.com/"><img src="https://podstandards.org/wp-content/uploads/2025/03/podpage-logo.png"></a>
 						<p>Podpage</p>
+					</li>
+					<li>
+						<a href="https://truefans.fm/"><img src="https://podstandards.org/wp-content/uploads/2025/07/truefans.png"></a>
+						<p>TrueFans</p>
+					</li>
+					<li>
+						<a href="https://disctopia.com/"><img src="https://podstandards.org/wp-content/uploads/2026/08/disctopia.png"></a>
+						<p>Disctopia<p>
 					</li>
 					<li class="comingsoon">
 						<small>Coming Soon</small>
@@ -130,6 +134,10 @@
 					<li>
 						<a href="https://anytimeplayer.app/"><img src="https://podstandards.org/wp-content/uploads/2025/03/anytime-player.png"></a>
 						<p>Anytime Podcast Player</p>
+					</li>
+					<li>
+						<a href="https://disctopia.com/"><img src="https://podstandards.org/wp-content/uploads/2026/08/disctopia.png"></a>
+						<p>Disctopia<p>
 					</li>
 				</ul>
 			</section>
