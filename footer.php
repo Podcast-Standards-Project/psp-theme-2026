@@ -1,7 +1,7 @@
 <!-- edited -->
 
 </main>
-<?php get_sidebar(); ?>
+<?php if ( !is_home() ) { get_sidebar(); } ?>
 </div>
 
 <footer id="footer" role="contentinfo">
