@@ -367,6 +367,28 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
  		padding-bottom: 1rem;
 	}
 
+	/* Keep post section headings smaller than the article title. */
+	.single-post .entry-content :is(h2, h3, h4, h5, h6) {
+		color: var(--color-ink);
+		font: 400 1.25rem/1.15 var(--font-family-display);
+		letter-spacing: normal;
+		margin: 2rem 0 1rem;
+		padding: 0;
+		border: 0;
+	}
+
+	.single-post .entry-content h2 {
+		font-size: 2rem;
+	}
+
+	.single-post .entry-content h3 {
+		font-size: 1.75rem;
+	}
+
+	.single-post .entry-content h4 {
+		font-size: 1.5rem;
+	}
+
 	/* prevent headings from showing bold or italics */
 	main article :is(h1, h2, h3, h4, h5, h6) strong {
 		font-weight: inherit;
@@ -482,6 +504,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 .blog-card h2 {
 	font: 400 2.25rem/1.1 var(--font-family-display);
 	margin: 1rem 0;
+}
+
+.single-post h1.entry-title {
+	color: var(--color-accent);
+	font: 400 3rem/1.1 var(--font-family-display);
+	margin: 1rem 0 1.5rem;
 }
 
 .blog-card h2 a {
@@ -613,7 +641,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /* 	These things should be addressed at the template level, but I ran out of time and Wordpress knowledge.
 	Don't judge me too harshly. :) */
 	
-	h1.entry-title { display: none; } /* Hides the duplicate blog post title */
+	body:not(.single-post) h1.entry-title { display: none; } /* Hide duplicate titles where the banner is retained. */
 	.post-navigation { display: none; } /* Hides the unstyled prev/next blog nav */
 
 /* Stop the catch-all `main article span` rule from adding a huge gap under embeds */

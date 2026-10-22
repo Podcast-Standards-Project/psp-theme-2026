@@ -5,7 +5,11 @@
 <article>
 	<header>
 	<?php if ( is_single() ) { echo '<h1 class="entry-title" itemprop="headline">'; } else { echo '<h2 class="entry-title">'; } ?>
+	<?php if ( is_singular( 'post' ) ) : ?>
+	<?php the_title(); ?>
+	<?php else : ?>
 	<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" rel="bookmark"><?php the_title(); ?></a>
+	<?php endif; ?>
 	<?php if ( is_single() ) { echo '</h1>'; } else { echo '</h2>'; } ?>
 	</header>
 
