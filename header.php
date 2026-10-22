@@ -31,6 +31,7 @@
 			<a href="/"><img src="https://podstandards.org/wp-content/uploads/2023/06/PSP-fulllogo-black-orange.svg"></a>
 			<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' ) ); ?>
 </nav>
+	<?php if ( !is_singular( 'post' ) ) : ?>
 	<div class="dark">
 		<section>
 			<h1><?php if ( is_front_page() ) :
@@ -40,6 +41,7 @@
 			endif; ?></h1>
 		</section>
 	</div>
+	<?php endif; ?>
 </header>
 <div id="container">
 <main id="content" role="main">
