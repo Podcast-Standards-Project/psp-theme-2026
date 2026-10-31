@@ -397,7 +397,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		font-style: normal;
 	}
 
-	main article span {
+	/* Let Jetpack style its form labels, required markers, and error icons. */
+	main article span:not(:where(.contact-form *)) {
 		display: block;
 		margin-bottom: 6rem;
 	}
